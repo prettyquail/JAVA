@@ -1,0 +1,25 @@
+
+public class Q_10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		sayHelloTo("Manisha");
+		int x=returnFive();
+		System.out.println(x);
+		
+		int result=sqaureroot(x);
+		System.out.println(result);
+
+	}
+	static void sayHelloTo(String m) {
+		System.out.println("Hello"+m);
+		
+	}
+	static int returnFive() {
+		return 5;
+	}
+	static int sqaureroot(int x) {
+		return(x*x);
+	}
+
+}
