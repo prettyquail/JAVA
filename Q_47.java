@@ -67,7 +67,7 @@ class FourWheeler implements Vehicle
 	}
 
 }
-class Q_46
+class Q_47
 {
 	public static void main(String args[])
 	{
