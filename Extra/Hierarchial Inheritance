@@ -1,0 +1,34 @@
+class One
+{
+	int x=10,y=20;
+	void disp(){
+	System.out.println("Method of class One");
+	System.out.println("Value of x:"+x);
+	System.out.println("Value of y:"+y);
+	}
+}
+class Two extends One
+{
+	void add(){
+	System.out.println("Method of class Two:");
+	System.out.println("Addition:"+(x+y));
+	}
+}
+class  Three extends One
+{
+	
+	void mult(){
+	System.out.println("Method of class Three:");
+	System.out.println("Multiplication:"+(x*y));
+	}
+}
+class HI
+{
+	public static void main(String args[]){
+	Two obj1=new Two();
+	Three obj2=new Three();
+	obj1.disp();
+	obj1.add();
+	obj2.mult();
+	}
+}
