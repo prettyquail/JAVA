@@ -1,0 +1,41 @@
+class Student
+{
+	int roll;
+	void getroll(int x){
+	roll=x;
+	}
+	void putroll(){
+	System.out.println("Roll number="+roll);
+	}
+}
+class Test extends Student
+{
+	int m1,m2;
+	void getmarks(int x,int y){
+	m1=x;
+	m2=y;
+	}
+	void putmark(){
+	System.out.println("Test 1:"+m1);
+	System.out.println("Test 2:"+m2);
+	}
+}
+class  Result extends Test
+{
+	int total;
+	void disp(){
+	putroll();
+	putmark();
+	total=m1+m2;
+	System.out.println("Total"+total);
+	}
+}
+class Main
+{
+	public static void main(String args[]){
+	Result obj=new Result();
+	obj.getroll(10);
+	obj.getmarks(80,85);
+	obj.disp();
+	}
+}
