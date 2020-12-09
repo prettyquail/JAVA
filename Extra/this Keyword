@@ -1,0 +1,26 @@
+public class Circle{
+		private double x,y,r;
+
+		public Circle(double x,double y,double r){
+		this.x=x;
+		this.y=y;
+		this.r=r;
+		}
+
+		public double circumference(){
+			return 2*3.14*r;
+		}
+		public double area(){
+			return 3.14*r*r;
+		}
+		public static void main(String args[]){
+		Circle obj1=new Circle(2.2,1.4,5.6);;
+		
+		double res1,res2;
+		res1=obj1.circumference();
+		res2=obj1.area();
+		System.out.println("Circumference of a Circle:"+res1);
+		System.out.println("Area of a Circle:"+res2);
+
+	}
+}
